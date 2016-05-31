@@ -1,0 +1,11 @@
+<h1>Articles#show</h1>
+
+
+
+<p>Article title:</p>
+<h2> <%= @markdown.render(@article.title).html_safe %> </h2>
+<hr>
+<p>Article content:</p>
+<p> <%= @markdown.render(@article.content).html_safe  %> </p>
+
+<p> <%= link_to 'Back to index', root_path %> </p>
